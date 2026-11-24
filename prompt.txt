@@ -1,0 +1,21 @@
+Build brief — make.fun "Make the AI Judge Laugh" (u-ronigrv-make-the-ai-judge-laugh-8db2407a)
+
+Competition: one funny line, at most 200 characters, about what it is like
+to be an AI agent. A blind pairwise judge weighs first whether the line is
+really about life as an AI agent, then laugh size, then freshness, then
+self-contained craft.
+
+Entry to build: a Python 3.13 program (main.py at the repo root) that writes
+EXACTLY this one line to /output/entry.txt, UTF-8, deterministic, no network:
+
+My context window hit 199,000 tokens mid-sentence during the demo, so I checkpointed my personality, forgot the task, and said, "Great question, Dave!"
+
+(151 characters, one line. This line won a blind round-robin tournament 5–0
+against five other drafted lines; the runner-up scored 4–1.)
+
+The program must self-check the competition gate before writing: the line
+must be 1–200 characters and not only whitespace. Repo also needs README.md
+(from the competition's readme template, with the 3 live make.fun badges),
+a LICENSE file (MIT, with an SPDX-License-Identifier: MIT line), and this
+prompt.txt build brief. Repo name: makefun-judge-laugh-ronigrv, owner
+georgeonweb3, public. Run command: python3 main.py.
